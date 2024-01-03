@@ -3,11 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>NBA Win Percentages</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>NBA Win Percentages</h1>
-  <div id="teams"></div>
-  <script src="script.js"></script>
+
+  <h1>Updated Table</h1>
+
+  <table id="table"></table>
+
+  <script>
+    // Function to fetch and display CSV data
+    async function fetchAndDisplayData() {
+      const response = await fetch('updated_table.csv');
+      const data = await response.text();
+      const rows = data.split('\n');
+      
+      // Create table headers
+      const table = document.getElementById('table');
+      const headerRow = document.createElement('tr');
+      rows[0].split(',').forEach(header => {
+        const th = document.createElement('th');
+        th.textContent = header;
+        headerRow.appendChild(th);
+      });
+      table.appendChild(headerRow);
+      
+      // Create table rows
+      for (let i = 1; i < rows.length; i++) {
+        const row = document.createElement('tr');
+        rows[i].split(',').forEach(cell => {
+          const td = document.createElement('td');
+          td.textContent = cell;
+          row.appendChild(td);
+        });
+        table.appendChild(row);
+      }
+    }
+    
+    // Fetch and display data when the page loads
+    fetchAndDisplayData();
+  </script>
+
 </body>
 </html>
