@@ -49,6 +49,8 @@ for row in rows:
 # Create a DataFrame with the scraped data
 df = pd.DataFrame(data, columns=["Date", "Match", "B", "C", "1", "2"])
 
+df[['Home Team', 'Away Team']] = df['Match'].str.split('-', expand=True)
+
 df.drop(columns=['B', 'C'], axis=1, inplace=True)
 df.dropna(subset={'1'}, inplace=True)
 df = df[df['1'] != '\xa0']
@@ -68,6 +70,9 @@ df['Implied_Prob_2'] = 1/df['2']
 df['Home Team Win Probability'] = np.round(df['Implied_Prob_1']/(df['Implied_Prob_1'] + df['Implied_Prob_2']), 3)
 df['Away Team Win Probability'] = np.round(df['Implied_Prob_2']/(df['Implied_Prob_1'] + df['Implied_Prob_2']), 3)
 
-df.drop(columns = ['1', '2', 'Implied_Prob_1', 'Implied_Prob_2'], axis=1, inplace=True)
+df.drop(columns = ['index','Match', '1', '2', 'Implied_Prob_1', 'Implied_Prob_2'], axis=1, inplace=True)
 
-df.to_csv('/Users/jamiewelsh/Python/NBA_win_percentages/site/updated_table.csv', index=False)
+df.rename({'Date': 'Date and Time of Match'}, axis=1, inplace=True)
+
+
+df.to_csv('/Users/jamiewelsh/Python/NBA_win_percentages/updated_table.csv', index=False)

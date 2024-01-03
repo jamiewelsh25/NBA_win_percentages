@@ -1,27 +1,27 @@
-index,Date,Match,Home Team Win Probability,Away Team Win Probability
-1,Tomorrow 01:00,Cleveland Cavaliers - Washington Wizards,0.784,0.216
-2,Tomorrow 01:00,Indiana Pacers - Milwaukee Bucks,0.411,0.589
-3,Tomorrow 01:30,Atlanta Hawks - Oklahoma City Thunder,0.499,0.501
-4,Tomorrow 02:00,Houston Rockets - Brooklyn Nets,0.647,0.353
-5,Tomorrow 02:00,Memphis Grizzlies - Toronto Raptors,0.512,0.488
-6,Tomorrow 02:00,Minnesota Timberwolves - New Orleans Pelicans,0.698,0.302
-7,Tomorrow 02:30,Dallas Mavericks - Portland Trail Blazers,0.831,0.169
-8,Tomorrow 02:30,New York Knicks - Chicago Bulls,0.778,0.222
-9,Tomorrow 03:00,Phoenix Suns - Los Angeles Clippers,0.4,0.6
-10,Tomorrow 03:00,Utah Jazz - Detroit Pistons,0.749,0.251
-11,Tomorrow 04:00,Los Angeles Lakers - Miami Heat,0.658,0.342
-12,Tomorrow 04:00,Sacramento Kings - Orlando Magic,0.634,0.366
-13,05.01. 01:30,San Antonio Spurs - Milwaukee Bucks,0.282,0.718
-14,05.01. 04:00,Golden State Warriors - Denver Nuggets,0.41,0.59
-16,06.01. 01:00,Boston Celtics - Utah Jazz,0.837,0.163
-17,06.01. 01:00,Indiana Pacers - Atlanta Hawks,0.657,0.343
-18,06.01. 01:30,Brooklyn Nets - Oklahoma City Thunder,0.453,0.547
-19,06.01. 01:30,Cleveland Cavaliers - Washington Wizards,0.743,0.257
-20,06.01. 01:30,Philadelphia 76ers - New York Knicks,0.691,0.309
-21,06.01. 02:00,Chicago Bulls - Charlotte Hornets,0.614,0.386
-22,06.01. 02:00,Houston Rockets - Minnesota Timberwolves,0.474,0.526
-23,06.01. 02:00,New Orleans Pelicans - Los Angeles Clippers,0.474,0.526
-24,06.01. 02:30,Dallas Mavericks - Portland Trail Blazers,0.743,0.257
-26,06.01. 02:30,Phoenix Suns - Miami Heat,0.589,0.411
-28,06.01. 02:30,Los Angeles Lakers - Memphis Grizzlies,0.614,0.386
-29,06.01. 02:30,Sacramento Kings - Toronto Raptors,0.657,0.343
+Date and Time of Match,Home Team,Away Team,Home Team Win Probability,Away Team Win Probability
+Tomorrow 01:00,Cleveland Cavaliers , Washington Wizards,0.784,0.216
+Tomorrow 01:00,Indiana Pacers , Milwaukee Bucks,0.411,0.589
+Tomorrow 01:30,Atlanta Hawks , Oklahoma City Thunder,0.499,0.501
+Tomorrow 02:00,Houston Rockets , Brooklyn Nets,0.647,0.353
+Tomorrow 02:00,Memphis Grizzlies , Toronto Raptors,0.512,0.488
+Tomorrow 02:00,Minnesota Timberwolves , New Orleans Pelicans,0.699,0.301
+Tomorrow 02:30,Dallas Mavericks , Portland Trail Blazers,0.831,0.169
+Tomorrow 02:30,New York Knicks , Chicago Bulls,0.778,0.222
+Tomorrow 03:00,Phoenix Suns , Los Angeles Clippers,0.4,0.6
+Tomorrow 03:00,Utah Jazz , Detroit Pistons,0.749,0.251
+Tomorrow 04:00,Los Angeles Lakers , Miami Heat,0.656,0.344
+Tomorrow 04:00,Sacramento Kings , Orlando Magic,0.634,0.366
+05.01. 01:30,San Antonio Spurs , Milwaukee Bucks,0.282,0.718
+05.01. 04:00,Golden State Warriors , Denver Nuggets,0.41,0.59
+06.01. 01:00,Boston Celtics , Utah Jazz,0.837,0.163
+06.01. 01:00,Indiana Pacers , Atlanta Hawks,0.657,0.343
+06.01. 01:30,Brooklyn Nets , Oklahoma City Thunder,0.453,0.547
+06.01. 01:30,Cleveland Cavaliers , Washington Wizards,0.743,0.257
+06.01. 01:30,Philadelphia 76ers , New York Knicks,0.691,0.309
+06.01. 02:00,Chicago Bulls , Charlotte Hornets,0.614,0.386
+06.01. 02:00,Houston Rockets , Minnesota Timberwolves,0.474,0.526
+06.01. 02:00,New Orleans Pelicans , Los Angeles Clippers,0.474,0.526
+06.01. 02:30,Dallas Mavericks , Portland Trail Blazers,0.743,0.257
+06.01. 02:30,Phoenix Suns , Miami Heat,0.589,0.411
+06.01. 02:30,Los Angeles Lakers , Memphis Grizzlies,0.614,0.386
+06.01. 02:30,Sacramento Kings , Toronto Raptors,0.657,0.343
