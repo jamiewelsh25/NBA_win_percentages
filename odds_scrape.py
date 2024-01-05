@@ -82,4 +82,4 @@ def create_table():
 
 while True:
     create_table()
-    time.sleep(7200)
+    time.sleep(3600)
