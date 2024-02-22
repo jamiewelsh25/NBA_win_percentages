@@ -8,10 +8,7 @@ import time
 
 def create_table():
 
-    URL = "https://www.betexplorer.com/basketball/usa/nba/fixtures/"
-
-    # Specify the path to chromedriver
-    driver_path = '/Users/jamiewelsh/chromedriver_mac64'  # Replace with the actual path to chromedriver
+    URL = "https://www.betexplorer.com/basketball/usa/nba/fixtures/?stage=4CS5kbsl&month=all"
 
     # Set up the Selenium WebDriver
     driver = webdriver.Chrome()
