@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>NBA Win Percentages</title>
   <style>
-    /* Add styles for better readability */
+    /* Styles for better readability */
     body {
       font-family: Arial, sans-serif;
-      background-color: #333; /* Dark gray background */
-      color: #ffffff; /* White text */
+      background-color: #fff; /* White background */
+      color: #000; /* Black text */
       margin: 0;
       padding: 20px;
     }
@@ -35,24 +35,24 @@
     }
 
     th {
-      background-color: #222; /* Slightly darker gray background for table headers */
+      background-color: #f2f2f2; /* Light gray background for table headers */
     }
 
     tr:nth-child(even) {
-      background-color: #444; /* Darker gray background for even rows */
+      background-color: #f9f9f9; /* Lighter gray background for even rows */
     }
 
     tr:hover {
-      background-color: #555; /* Even darker gray background for hover effect */
+      background-color: #f0f0f0; /* Even lighter gray background for hover effect */
     }
   </style>
 </head>
 <body>
 
-  <h1>Implied Win Probability of NBA Teams for Upcoming Fixtures</h1>
+  <h1>Implied NBA Win Percentages</h1>
 
   <p>
-    In this analysis, I scrape average odds from Betexplorer.com and use these odds to calculate implied probabilities for NBA teams. The bookmaker's VIG (vigorish) is removed to provide a more accurate representation of each team's win probability.
+    Average odds for upcoming NBA fixtures are scraped from a website which aggregates odds from various bookmakers. These odds are used to calculate implied win probabilities for each fixture with the bookmaker's VIG (vigorish) removed.
   </p>
 
   <table id="table"></table>

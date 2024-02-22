@@ -57,24 +57,24 @@ def create_table():
             df.at[index, 'Date'] = df.at[index - 1, 'Date']
 
 
-
-
-
     df['1'] = df['1'].astype(float)
     df['2'] = df['2'].astype(float)
 
-
+    # Calculate implied win probabilities
     df['Implied_Prob_1'] = 1/df['1']
     df['Implied_Prob_2'] = 1/df['2']
 
-    df['Home Team Win Probability'] = np.round(df['Implied_Prob_1']/(df['Implied_Prob_1'] + df['Implied_Prob_2']), 3)
-    df['Away Team Win Probability'] = np.round(df['Implied_Prob_2']/(df['Implied_Prob_1'] + df['Implied_Prob_2']), 3)
+    # Remove vigourish
+    df['Home Team Win Probability'] = np.round(df['Implied_Prob_1'] / (df['Implied_Prob_1'] + df['Implied_Prob_2']) * 100, 1)
+    df['Away Team Win Probability'] = np.round(df['Implied_Prob_2'] / (df['Implied_Prob_1'] + df['Implied_Prob_2']) * 100, 1)
 
+    # Add percentage sign to the end of each value
+    df['Home Team Win Probability'] = df['Home Team Win Probability'].astype(str) + '%'
+    df['Away Team Win Probability'] = df['Away Team Win Probability'].astype(str) + '%'
+
+    # Clean the df and save it to a csv file.
     df.drop(columns = ['index','Match', '1', '2', 'Implied_Prob_1', 'Implied_Prob_2'], axis=1, inplace=True)
-
     df.rename({'Date': 'Date and Time of Match (UK)'}, axis=1, inplace=True)
-
-
     df.to_csv('/Users/jamiewelsh/Python/NBA_win_percentages/updated_table.csv', index=False)
 
 while True:
